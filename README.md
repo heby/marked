@@ -5,6 +5,22 @@
 
 [![NPM version](https://badge.fury.io/js/marked.png)][badge]
 
+## 修改
+> 增加自定义caniuse规则
+
+```js
+var marked = require('marked');
+console.log(marked('[-once-event-listener-]'));
+// Outputs: 
+// <p class="ciu_embed" data-feature="once-event-listener" data-periods="future_1,current,past_1,past_2">
+//    <a href="http://caniuse.com/#feat=once-event-listener">Can I Use once-event-listener?</a> Data on support for the once-event-listener feature across the major browsers from caniuse.com.
+// </p>
+```
+详见[Add support tables to your site](https://caniuse.bitsofco.de/)
+
+## 计划
+> 增加插件功能，可直接在外部直接拓展marked
+
 ## Install
 
 ``` bash
